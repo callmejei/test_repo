@@ -1,0 +1,4 @@
+{% macro get_columns(db,tblname) %}
+  {%- set columns = adapter.get_columns_in_relation(db+'.'+"'"+tblname+"'")| map(attribute='column')|join(', ') -%}
+  {{ return(columns) }}
+{% endmacro %}
