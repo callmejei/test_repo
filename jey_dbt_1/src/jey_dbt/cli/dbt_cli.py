@@ -53,7 +53,7 @@ def init(
     ),
 ):
     """
-    Create a dbt project directory compliant with our OCBC requirements
+    Create a dbt project directory compliant with our requirements
 
     Args:
         project_name (str): Name of user's dbt project.
